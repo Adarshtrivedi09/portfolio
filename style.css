@@ -271,23 +271,76 @@ footer {
     border: none;
     cursor: pointer;
 }
+.theme {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 @media (max-width: 768px) {
 
     .navbar {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 15px;
+display: flex;        
+justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        background:none;
+        border: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    .theme {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     nav {
-        flex-wrap: wrap;
-        gap: 12px;
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 5%;
+        background: white;
+        flex-direction: column;
+        width: 120px;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        gap: 10px;
+        z-index: 999;
+    }
+    
+    nav.active{
+        display:flex;
     }
 
     nav a {
         font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+
+     nav a:hover {
+        background: #f2f2f2;
+        border-bottom: none;
     }
 
     #heading1 {

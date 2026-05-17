@@ -16,8 +16,7 @@
             <div>
                 <h1 id="heading1">Mr. Adarsh</h1>
             </div>
-
-            <button class="menu-toggle" id="menu-toggle">☰</button>
+            
             <nav>
                 <a href="#home">Home</a>
                 <a href="#about">About Me</a>
@@ -26,7 +25,13 @@
                 <a href="#skills">Skills</a>
                 <a href="#achievements">Achievements</a>
             </nav>
+
+            <div class="theme"><button class="Day-toggle" id="Day-toggle">🌞</button>
+                <button class="Night-toggle" id="Night-toggle">🌜</button>
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+            </div>
         </div>
+
     </header>
     <div id="home" class="image-container">
         <img src="images/AT2.png" class="profile-img" alt="Adarsh Trivedi - Web Developer Portfolio" />
@@ -42,7 +47,7 @@
         </div>
     </div>
 
-    <section id="about" class="about-me">
+    <section id="about" class="about-me hidden">
         <h2>About Adarsh</h2>
         <p>
             I am <strong>Adarsh Trivedi</strong>, a dedicated MCA student with a
@@ -63,7 +68,7 @@
 
 
 
-    <div id="projects" class="exp">
+    <div id="projects" class="exp hidden">
         <div class="exp1">
             <h2>Projects</h2>
             <h3>My Projects</h3>
@@ -90,7 +95,7 @@
         </div>
     </div>
 
-    <div id="education" class="edu">
+    <div id="education" class="edu hidden">
         <h2>Education</h2>
         <h3>Academic Qualifications</h3>
 
@@ -134,7 +139,7 @@
         </ul>
     </div>
 
-    <div id="contact" class="contact">
+    <div id="contact" class="contact hidden">
         <h2>Contact</h2>
         <p>
             Feel free to contact me for collaboration or opportunities.
@@ -168,4 +173,3 @@
 
     <script src="script.js"></script>
 </body>
-

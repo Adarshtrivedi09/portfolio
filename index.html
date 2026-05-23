@@ -11,12 +11,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div>
+    <header class="navbar">
                 <h1 id="heading1">Mr. Adarsh</h1>
-            </div>
-            
             <nav>
                 <a href="#home">Home</a>
                 <a href="#about">About Me</a>
@@ -26,11 +22,14 @@
                 <a href="#achievements">Achievements</a>
             </nav>
 
-            <div class="theme"><button class="Day-toggle" id="Day-toggle">🌞</button>
-                <button class="Night-toggle" id="Night-toggle">🌜</button>
+            <div class="theme">
+                <div class="theme-toggle" id="theme-toggle">
+                    <div class="toggle-circle"></div>
+                </div>
+
                 <button class="menu-toggle" id="menu-toggle">☰</button>
             </div>
-        </div>
+        
 
     </header>
     <div id="home" class="image-container">
@@ -66,10 +65,8 @@
         contribute effectively to dynamic development teams.
     </section>
 
-
-
     <div id="projects" class="exp hidden">
-        <div class="exp1">
+        <div>
             <h2>Projects</h2>
             <h3>My Projects</h3>
         </div>
@@ -173,3 +170,4 @@
 
     <script src="script.js"></script>
 </body>
+</html>

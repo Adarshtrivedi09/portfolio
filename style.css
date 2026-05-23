@@ -47,6 +47,8 @@ nav {
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
 }
 
 nav a:hover {
@@ -271,6 +273,7 @@ footer {
     border: none;
     cursor: pointer;
 }
+
 .theme {
     display: flex;
     align-items: center;
@@ -292,15 +295,14 @@ footer {
 @media (max-width: 768px) {
 
     .navbar {
-display: flex;        
-justify-content: space-between;
-        align-items: center;
+        display: flex;
+        justify-content: space-between;
     }
 
     .menu-toggle {
         display: block;
         font-size: 30px;
-        background:none;
+        background: none;
         border: none;
         cursor: pointer;
         color: black;
@@ -322,13 +324,13 @@ justify-content: space-between;
         width: 120px;
         border-radius: 10px;
         padding: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         gap: 10px;
         z-index: 999;
     }
-    
-    nav.active{
-        display:flex;
+
+    nav.active {
+        display: flex;
     }
 
     nav a {
@@ -338,7 +340,7 @@ justify-content: space-between;
         transition: 0.3s;
     }
 
-     nav a:hover {
+    nav a:hover {
         background: #f2f2f2;
         border-bottom: none;
     }
@@ -385,3 +387,146 @@ justify-content: space-between;
     }
 }
 
+/* Dark Theme Styles */
+
+
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+/* Header */
+body.dark-theme header {
+    background-color: #1e1e1e;
+}
+
+/* Navbar Links */
+body.dark-theme nav a {
+    color: white;
+}
+
+body.dark-theme nav a:hover {
+    border-bottom: 2px solid white;
+    color: black;
+}
+
+/* Mobile Menu */
+body.dark-theme nav {
+    background-color: #1e1e1e;
+}
+
+/* About Sections */
+body.dark-theme .about-me,
+body.dark-theme .about-me2 {
+    color: white;
+}
+
+/* Education & Achievements */
+body.dark-theme .edu,
+body.dark-theme .ach {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Projects */
+body.dark-theme .exp {
+    background-color: #121212;
+}
+
+/* Skills */
+body.dark-theme .skills {
+    background-color: #1e1e1e;
+}
+
+/* Contact */
+body.dark-theme .contact {
+    background-color: #121212;
+}
+
+/* Footer */
+body.dark-theme footer {
+    background-color: #1e1e1e;
+}
+
+/* Form Fields */
+body.dark-theme .form input,
+body.dark-theme .form textarea {
+    background-color: #2b2b2b;
+    border: 1px solid #555;
+    color: white;
+}
+
+/* Submit Button */
+body.dark-theme .submit {
+    background-color: white;
+    color: black;
+}
+
+body.dark-theme .submit:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Mobile Menu Button */
+
+.menu-toggle {
+    color: black;
+}
+
+body.dark-theme .menu-toggle {
+    color: white;
+}
+
+/* Smooth Transition */
+body,
+header,
+nav,
+section,
+div,
+footer,
+input,
+textarea,
+button,
+a {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.theme-toggle {
+    width: 55px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    transition: 0.4s;
+}
+
+.toggle-circle {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+body.dark-theme .theme-toggle {
+    background: black;
+    border-color: black;
+}
+
+body.dark-theme .toggle-circle {
+    transform: translateX(33px);
+    background: white;
+    border-color: white;
+}

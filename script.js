@@ -9,7 +9,7 @@ menuToggle.addEventListener('click', () => {
 const hiddenElements = document.querySelectorAll(".hidden");
 
 const observer = new IntersectionObserver((entries) => {
-    
+
     entries.forEach((entry) => {
 
         if (entry.isIntersecting) {
@@ -22,3 +22,8 @@ const observer = new IntersectionObserver((entries) => {
 
 hiddenElements.forEach((el) => observer.observe(el));
 
+const themeToggle = document.getElementById('theme-toggle');
+
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+});
